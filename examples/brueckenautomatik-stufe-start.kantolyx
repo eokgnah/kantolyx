@@ -1,0 +1,36 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Stufenmodell – Brückenautomatik",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sback",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbase/back",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sraise",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sback/side/2",
+      "params": {
+        "distance": 1
+      }
+    }
+  ]
+}

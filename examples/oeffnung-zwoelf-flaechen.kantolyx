@@ -1,0 +1,57 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Öffnung · zwölf Flächen",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "scc",
+      "type": "subdivide",
+      "params": {
+        "levels": 1
+      },
+      "enabled": true
+    },
+    {
+      "id": "sshell",
+      "type": "shell",
+      "enabled": true,
+      "params": {
+        "thickness": 0.01,
+        "openings": []
+      }
+    },
+    {
+      "id": "sopen",
+      "type": "shell_open",
+      "enabled": true,
+      "params": {
+        "source": "sshell",
+        "faces": [
+          "scc/cc1/q/75b3c8c3079e15a120809433fa99ac85",
+          "scc/cc1/q/e2a551d4aa09e33e5ff9248e3f25d0fa",
+          "scc/cc1/q/a08fc8c1568ce7fb7c3d69d9d343dbef",
+          "scc/cc1/q/4d6c9bdaddf8e990bbb5fa3420aff7dc",
+          "scc/cc1/q/039b6a02d1a9408c0664d1b0746b2d88",
+          "scc/cc1/q/575dfaa9c52fdcb7c6ec415542b4d1db",
+          "scc/cc1/q/9a11547c9dba3a3a03ff1a8a9f37b626",
+          "scc/cc1/q/2c81faabfb4e6c9dc4868a2f3ef5d171",
+          "scc/cc1/q/472831a6618bc42cc352c11ac99684a0",
+          "scc/cc1/q/d42c0b52a2f0175018c4f06ea5a603dc",
+          "scc/cc1/q/3c752ffbb85fba61dbb217397f8fb885",
+          "scc/cc1/q/b00f270fc3fd0fbddf970665a3803949"
+        ]
+      }
+    }
+  ]
+}

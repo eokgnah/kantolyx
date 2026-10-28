@@ -1,0 +1,27 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "schale-quader-geschlossen",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sshell",
+      "type": "shell",
+      "enabled": true,
+      "params": {
+        "thickness": 0.1,
+        "openings": []
+      }
+    }
+  ]
+}

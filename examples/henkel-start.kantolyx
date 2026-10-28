@@ -1,0 +1,72 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Brückenbeispiel",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sfront",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbase/front",
+      "params": {
+        "distance": 3
+      }
+    },
+    {
+      "id": "sfrontarm",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sfront/side/1",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sfrontend",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sfrontarm/cap",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sback",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbase/back",
+      "params": {
+        "distance": 3
+      }
+    },
+    {
+      "id": "sbackarm",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sback/side/3",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sbackend",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbackarm/cap",
+      "params": {
+        "distance": 2
+      }
+    }
+  ]
+}

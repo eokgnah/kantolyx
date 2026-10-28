@@ -1,0 +1,49 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Öffnungen · zwei Schritte",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sshell",
+      "type": "shell",
+      "enabled": true,
+      "params": {
+        "thickness": 0.1,
+        "openings": []
+      }
+    },
+    {
+      "id": "sfirst",
+      "type": "shell_open",
+      "enabled": true,
+      "params": {
+        "source": "sshell",
+        "faces": [
+          "sbase/top"
+        ]
+      }
+    },
+    {
+      "id": "ssecond",
+      "type": "shell_open",
+      "enabled": true,
+      "params": {
+        "source": "sshell",
+        "faces": [
+          "sbase/front"
+        ]
+      }
+    }
+  ]
+}

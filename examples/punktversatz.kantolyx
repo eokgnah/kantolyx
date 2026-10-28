@@ -1,0 +1,32 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Punktversatz",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "smove",
+      "type": "move_vertices",
+      "enabled": true,
+      "params": {
+        "vertices": [
+          "sbase/v0",
+          "sbase/v1"
+        ],
+        "x": 0.3,
+        "y": 0.2,
+        "z": 0
+      }
+    }
+  ]
+}

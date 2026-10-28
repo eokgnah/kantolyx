@@ -1,0 +1,26 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "draht-wuerfel",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "swire",
+      "type": "wire_model",
+      "enabled": true,
+      "params": {
+        "thickness": 0.1
+      }
+    }
+  ]
+}

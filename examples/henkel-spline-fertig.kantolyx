@@ -1,0 +1,92 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Henkel mit frei gezogener Spline-Mitte",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sfront",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbase/front",
+      "params": {
+        "distance": 3
+      }
+    },
+    {
+      "id": "sfrontarm",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sfront/side/1",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sfrontend",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sfrontarm/cap",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sback",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbase/back",
+      "params": {
+        "distance": 3
+      }
+    },
+    {
+      "id": "sbackarm",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sback/side/3",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sbackend",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbackarm/cap",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "scurve",
+      "type": "spline_bridge",
+      "enabled": true,
+      "targets": [
+        "sfrontend/cap",
+        "sbackend/cap"
+      ],
+      "params": {
+        "segments": 12,
+        "bendA": 0.6,
+        "bendB": 0.7,
+        "offset": 1,
+        "bow": [
+          0.05,
+          0.02,
+          0
+        ]
+      }
+    }
+  ]
+}

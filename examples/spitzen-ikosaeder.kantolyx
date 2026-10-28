@@ -1,0 +1,47 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "spitzen-ikosaeder",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "primitive",
+      "enabled": true,
+      "params": {
+        "kind": "icosahedron",
+        "size": 2
+      }
+    },
+    {
+      "id": "stips",
+      "type": "stellate",
+      "enabled": true,
+      "params": {
+        "height": 0.4,
+        "faces": [
+          "sbase/icosahedron/f0-1-2",
+          "sbase/icosahedron/f0-1-7",
+          "sbase/icosahedron/f0-2-6",
+          "sbase/icosahedron/f0-5-6",
+          "sbase/icosahedron/f0-5-7",
+          "sbase/icosahedron/f1-2-8",
+          "sbase/icosahedron/f1-3-7",
+          "sbase/icosahedron/f1-3-8",
+          "sbase/icosahedron/f2-4-6",
+          "sbase/icosahedron/f2-4-8",
+          "sbase/icosahedron/f3-7-11",
+          "sbase/icosahedron/f3-8-9",
+          "sbase/icosahedron/f3-9-11",
+          "sbase/icosahedron/f4-6-10",
+          "sbase/icosahedron/f4-8-9",
+          "sbase/icosahedron/f4-9-10",
+          "sbase/icosahedron/f5-6-10",
+          "sbase/icosahedron/f5-7-11",
+          "sbase/icosahedron/f5-10-11",
+          "sbase/icosahedron/f9-10-11"
+        ]
+      }
+    }
+  ]
+}

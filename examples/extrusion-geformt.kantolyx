@@ -1,0 +1,54 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Konisch verdrehte Extrusion",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sarm",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sbase/front",
+      "params": {
+        "distance": 2
+      }
+    },
+    {
+      "id": "sform",
+      "type": "face_transform",
+      "enabled": true,
+      "target": "sarm/cap",
+      "params": {
+        "scale": 0.7,
+        "angle": 20
+      }
+    },
+    {
+      "id": "slater",
+      "type": "extrude",
+      "enabled": true,
+      "target": "sarm/cap",
+      "params": {
+        "distance": 1
+      }
+    },
+    {
+      "id": "ssmooth",
+      "type": "subdivide",
+      "enabled": true,
+      "params": {
+        "levels": 2
+      }
+    }
+  ]
+}

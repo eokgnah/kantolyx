@@ -1,0 +1,40 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "Öffnung · drei Flächen",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sshell",
+      "type": "shell",
+      "enabled": true,
+      "params": {
+        "thickness": 0.1,
+        "openings": []
+      }
+    },
+    {
+      "id": "sopen",
+      "type": "shell_open",
+      "enabled": true,
+      "params": {
+        "source": "sshell",
+        "faces": [
+          "sbase/top",
+          "sbase/front",
+          "sbase/left"
+        ]
+      }
+    }
+  ]
+}

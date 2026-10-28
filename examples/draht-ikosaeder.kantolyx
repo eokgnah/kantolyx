@@ -1,0 +1,25 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "draht-ikosaeder",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "primitive",
+      "enabled": true,
+      "params": {
+        "kind": "icosahedron",
+        "size": 2
+      }
+    },
+    {
+      "id": "swire",
+      "type": "wire_model",
+      "enabled": true,
+      "params": {
+        "thickness": 0.1
+      }
+    }
+  ]
+}

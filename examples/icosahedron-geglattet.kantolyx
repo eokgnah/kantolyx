@@ -1,0 +1,25 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "icosahedron",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "primitive",
+      "enabled": true,
+      "params": {
+        "kind": "icosahedron",
+        "size": 2
+      }
+    },
+    {
+      "id": "ssmooth",
+      "type": "subdivide",
+      "enabled": true,
+      "params": {
+        "levels": 2
+      }
+    }
+  ]
+}

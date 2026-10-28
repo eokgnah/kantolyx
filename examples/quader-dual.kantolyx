@@ -1,0 +1,26 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "quader · Dualnetz",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "cube",
+      "enabled": true,
+      "params": {
+        "width": 2,
+        "height": 2,
+        "depth": 2
+      }
+    },
+    {
+      "id": "sdual",
+      "type": "dual",
+      "enabled": true,
+      "params": {
+        "scale": 1
+      }
+    }
+  ]
+}

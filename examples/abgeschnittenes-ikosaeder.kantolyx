@@ -1,0 +1,25 @@
+{
+  "format": "kantolyx-project",
+  "formatVersion": 1,
+  "appVersion": "0.5.65",
+  "name": "abgeschnittenes-ikosaeder",
+  "steps": [
+    {
+      "id": "sbase",
+      "type": "primitive",
+      "enabled": true,
+      "params": {
+        "kind": "icosahedron",
+        "size": 2
+      }
+    },
+    {
+      "id": "scut",
+      "type": "truncate",
+      "enabled": true,
+      "params": {
+        "amount": 0.25
+      }
+    }
+  ]
+}
